@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    int a, b;
+    int a, b, c=0;
     scanf("%d", &a);
     do {
     scanf("%d", &b);
@@ -11,9 +11,10 @@ int main(void)
     else if(b<a)
       printf("%d<?\n", b);
     else
-      printf("%d==?", b);
-    } while (a!=b);
+      printf("%d==?\n", b);
+    c+=1;
+    } while(a!=b);
+    printf("%d", c);
     
-
     return 0;
 }
